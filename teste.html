@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Simple web scraper</title>
+  <meta name="description" content="Simple web scraper of metropoles.com articles (for studying purposes)">
+  <meta name="author" content="Gabriella">
+
+  <style>
+    body {
+      margin: 50px !important;
+    }
+
+    #myform {
+      height: 100px;
+      overflow: hidden;
+    }
+
+    #myiframe {
+      opacity: 0;
+    }
+
+    .rawArticle {
+      max-height: 100px;
+      overflow: scroll;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <section id="myform">
+    <input id="myfile" type="file" />
+    <div id="myiframe"></div>
+  </section>
+  <button onclick="copyTable()">Copy Table</button>
+  <table id="output">
+    <tr>
+      <th class="rawArticle"></th>
+      <th>Ciumes</th>
+      <th>PerdadePoder</th>
+      <th>SeparacaEla</th>
+      <th>ReincidenciaCrime</th>
+      <th>ReincidenciaViolenciaContraMulher</th>
+      <th>BOPrevio</th>
+      <th>SensacadePoder</th>
+      <th>Agressividade</th>
+      <th>AtividadeSexual</th>
+      <th>Droga</th>
+      <th>Imprudencia</th>
+      <th>Homofobia</th>
+      <th>SaudeMentalAfetada</th>
+    </tr>
+  </table>
+  <footer></footer>
+  <script>
+    const input = document.getElementById("myfile");
+    const iframe = document.getElementById("myiframe");
+    const output = document.getElementById("output");
+
+    input.addEventListener('change', () => {
+      const files = input.files;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        // prod
+        const articles = e.target.result.split('\n');
+        articles.map((article) => {
+
+          // dev
+          // const twoArticles = [e.target.result.split('\n')[0], e.target.result.split('\n')[2]];
+          // twoArticles.map((article) => {
+          let url = article.split('	')[0];
+          fetch('https://cors-anywhere.herokuapp.com/' + url).then((response) => {
+            return response.text();
+          }).then((text) => {
+            iframe.innerHTML = text;
+
+            const content = document.getElementsByClassName("td-post-content")[0];
+            const paragraphs = content.getElementsByTagName("p")
+
+            let rawArticle = "";
+            Array.from(paragraphs).map((p) => rawArticle += p.innerText);
+
+            // Add output on html
+            const tr = document.createElement("tr");
+
+            const td1 = document.createElement("td");
+            td1.classList.add("rawArticle");
+            td1.innerText = rawArticle;
+            tr.appendChild(td1);
+
+            article.split('	').filter((a) => a === '0' || a === '1').map((a) => {
+              const td = document.createElement("td");
+              td.innerText = a;
+              tr.appendChild(td);
+            });
+
+            output.appendChild(tr);
+          }).catch((error) => {
+            console.log(`Error: ${url}`);
+          });
+        });
+      }
+
+      reader.readAsText(input.files[0], 'utf-8');
+    });
+
+    function copyTable() {
+      const table = document.getElementById("output");
+      const range = document.createRange();
+      range.selectNode(table);
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+    }
+  </script>
+</body>
+
+</html>
