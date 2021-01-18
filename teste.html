@@ -71,7 +71,7 @@
         articles.map((article) => {
 
           // dev
-          // const twoArticles = [e.target.result.split('\n')[0], e.target.result.split('\n')[2]];
+          // const twoArticles = [e.target.result.split('\n')[0]];
           // twoArticles.map((article) => {
           let url = article.split('	')[0];
           fetch('https://cors-anywhere.herokuapp.com/' + url).then((response) => {
@@ -79,11 +79,20 @@
           }).then((text) => {
             iframe.innerHTML = text;
 
-            const content = document.getElementsByClassName("td-post-content")[0];
-            const paragraphs = content.getElementsByTagName("p")
+            let content = null;
+
+            content = document.getElementsByClassName("td-post-content");
+            if (content.length == 0)
+              content = document.getElementsByClassName("m-content");
+            if (content.length == 0)
+              throw new Error("No Content");
+
+            const paragraphs = content[0].getElementsByTagName("p");
 
             let rawArticle = "";
             Array.from(paragraphs).map((p) => rawArticle += p.innerText);
+
+            rawArticle = rawArticle.replaceAll(/\r?\n|\r/g, "");
 
             // Add output on html
             const tr = document.createElement("tr");
@@ -100,6 +109,7 @@
             });
 
             output.appendChild(tr);
+            //iframe.innerHTML = "";
           }).catch((error) => {
             console.log(`Error: ${url}`);
           });

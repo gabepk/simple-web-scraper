@@ -1,3 +1,5 @@
+https://www.metropoles.com/violencia-contra-a-mulher/palestina-denuncia-agressoes-de-ex-marido-brasiliense-pcdf-investiga		0	0	0	0	1	1	0	1	0	0	0	0	0
+https://www.metropoles.com/brasil/pai-de-neymar-defende-video-prefiro-crime-de-internet-a-de-estupro		0	0	0	0	0	0	0	0	1	0	0	0	0
 https://www.metropoles.com/brasil/forcada-a-reatar-com-o-marido-por-amecas-mulher-e-agredida-novamente		0	0	0	0	1	1	0	1	0	1	0	0	0
 https://www.metropoles.com/brasil/justica/entenda-a-conexao-do-escritorio-do-crime-com-a-morte-de-marielle		0	0	1	0	0	0	0	0	0	0	1	0	0
 https://www.metropoles.com/brasil/denunciado-por-assedio-menor-diz-nao-saber-que-cantada-na-rua-e-crime		0	0	0	0	0	0	0	0	1	1	0	0	0
@@ -97,7 +99,6 @@ https://www.metropoles.com/violencia-contra-a-mulher/mulher-e-estrangulada-e-mor
 https://www.metropoles.com/violencia-contra-a-mulher/gravida-morre-no-parto-apos-ser-agredida-por-marido		0	0	0	0	1	0	0	1	0	0	0	0	0
 https://www.metropoles.com/violencia-contra-a-mulher/cinco-homens-foram-presos-por-importunacao-sexual-em-salvador		0	0	0	0	0	0	0	1	1	0	0	0	0
 https://www.metropoles.com/violencia-contra-a-mulher/corpo-de-menina-de-14-anos-e-encontrado-em-porta-malas-de-carro-no-rj		0	0	0	0	0	0	0	1	0	1	0	0	0
-https://www.metropoles.com/violencia-contra-a-mulher/palestina-denuncia-agressoes-de-ex-marido-brasiliense-pcdf-investiga		0	0	0	0	1	1	0	1	0	0	0	0	0
 https://www.metropoles.com/violencia-contra-a-mulher/noiva-acusa-dono-de-academia-de-jiu-jitsu-no-df-de-agredi-la-em-festa		0	0	0	1	1	1	1	1	0	0	0	0	0
 https://www.metropoles.com/violencia-contra-a-mulher/abusada-pelo-padrasto-por-anos-menina-pede-socorro-na-rua-mae-sabia		0	0	0	0	1	0	1	1	1	0	0	0	0
 https://www.metropoles.com/violencia-contra-a-mulher/adolescente-e-vitima-de-estupro-coletivo-e-tem-utero-dilacerado		0	0	0	1	0	0	1	1	1	1	0	0	0
@@ -248,4 +249,3 @@ https://www.metropoles.com/brasil/justica/romario-e-denunciado-em-caso-envolvend
 https://www.metropoles.com/brasil/politica-br/greenwald-reage-a-insinuacoes-da-sua-sexualidade-homofobia-e-crime		0	1	0	0	0	0	0	0	0	0	0	1	0
 https://www.metropoles.com/colunas-blogs/pipocando/filho-de-mauricio-de-sousa-relata-homofobia-na-web-agora-e-crime		0	0	0	0	0	0	0	0	0	0	0	1	0
 https://www.metropoles.com/brasil/mae-da-namorada-de-rafael-miguel-narra-momento-do-crime		0	1	0	0	1	0	0	1	0	0	0	0	0
-https://www.metropoles.com/brasil/pai-de-neymar-defende-video-prefiro-crime-de-internet-a-de-estupro		0	0	0	0	0	0	0	0	1	0	0	0	0
