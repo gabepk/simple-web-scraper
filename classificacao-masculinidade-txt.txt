@@ -249,3 +249,9 @@ https://www.metropoles.com/brasil/justica/romario-e-denunciado-em-caso-envolvend
 https://www.metropoles.com/brasil/politica-br/greenwald-reage-a-insinuacoes-da-sua-sexualidade-homofobia-e-crime		0	1	0	0	0	0	0	0	0	0	0	1	0
 https://www.metropoles.com/colunas-blogs/pipocando/filho-de-mauricio-de-sousa-relata-homofobia-na-web-agora-e-crime		0	0	0	0	0	0	0	0	0	0	0	1	0
 https://www.metropoles.com/brasil/mae-da-namorada-de-rafael-miguel-narra-momento-do-crime		0	1	0	0	1	0	0	1	0	0	0	0	0
+https://www.metropoles.com/brasil/br-060-tres-pessoas-tentam-ajudar-em-acidente-e-morrem-atropeladas		0	0	0	0	0	0	0	0	0	0	1	0	0
+https://www.metropoles.com/violencia-contra-a-mulher/empresario-e-suspeito-de-matar-a-esposa-e-cometer-suicidio-em-goias		0	0	1	0	0	0	0	1	0	0	0	0	0
+https://www.metropoles.com/celebridades/apos-mal-estar-com-ex-marido-e-chefe-luciana-gimenez-vai-para-os-eua		0	0	0	0	0	0	1	0	0	0	0	0	0
+https://www.metropoles.com/brasil/acidente-deixa-seis-pessoas-feridas-e-uma-morta-em-formosa		0	0	0	0	0	0	0	0	0	0	1	0	0
+https://www.metropoles.com/violencia-contra-a-mulher/mulher-foi-estuprada-no-dia-em-que-chegou-no-hospital-diz-delegada		0	0	0	0	0	0	1	0	1	0	0	0	0
+https://www.metropoles.com/celebridades/diego-hypolito-tentou-suicidio-antes-de-revelar-homossexualidade		0	0	0	0	0	0	0	0	0	0	0	1	0

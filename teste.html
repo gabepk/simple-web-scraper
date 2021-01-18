@@ -79,15 +79,21 @@
           }).then((text) => {
             iframe.innerHTML = text;
 
-            let content = null;
+            let content = '';
 
             content = document.getElementsByClassName("td-post-content");
-            if (content.length == 0)
+            if (content == null || content.length == 0)
               content = document.getElementsByClassName("m-content");
-            if (content.length == 0)
-              throw new Error("No Content");
+            if (content.length > 0) content = content[0];
+            else {
+              content = document.querySelector("div.article-content");
+              if (content == null || content.length == 0)
+                content = document.querySelector("div.post_content")
+              if (content == null || content.length == 0)
+                throw new Error("No Content");
+            }
 
-            const paragraphs = content[0].getElementsByTagName("p");
+            const paragraphs = content.getElementsByTagName("p");
 
             let rawArticle = "";
             Array.from(paragraphs).map((p) => rawArticle += p.innerText);
